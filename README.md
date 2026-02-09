@@ -6,6 +6,9 @@ We appreciate that any coding challenge represents an investment of your time. W
 
 If you are successful, then we will set up an in-person interview and use this code as the starting point in our conversation.
 
+> [!IMPORTANT]
+> **[View Solution Documentation (README-SOLUTION.md)](./README-SOLUTION.md)**
+
 # The Challenge
 EstateSpace uses a JavaScript-based stack currently, which means [Node.js][nodejs] on the backend. We develop microservices using Node. The challenge would be to write a microservice to read data from a database and return it using a REST based resource.
 
@@ -80,7 +83,7 @@ In a server-side microservices approach, there are many areas that need to be de
 - Microservice health checks
 - Database communications security
 - Code quality, such as unit test coverage
-- Style, such as using [ESLint][eslint] and specific rules, such as [Airbnb][airbnb-eslint]
+- Style, such as using [ESLint][eslint] and specific rules, such as [airbnb-eslint][airbnb-eslint]
 - Application to showcase using the backend API
 
 # Prerequisites

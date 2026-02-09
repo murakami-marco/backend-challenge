@@ -2,24 +2,48 @@
   "name": "BackendChallenge1",
   "version": "0.0.1",
   "description": "A coding challenge for backend services",
-  "main": "dist",
+  "main": "src/server.js",
   "scripts": {
-    "test-lint-js": "npx eslint src/**/*.js test/**/*.js"
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "mocha test/**/*.test.js --timeout 10000 --exit",
+    "format": "prettier --write \"src/**/*.js\" \"test/**/*.js\"",
+    "format:check": "prettier --check \"src/**/*.js\" \"test/**/*.js\""
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/GriffinGroupGlobal/backend-challenge-1"
+    "url": "https://github.com/murakami-marco/backend-challenge.git"
   },
   "keywords": [
     "node",
     "nodejs",
-    "microservice"
+    "microservice",
+    "express",
+    "mongodb",
+    "jwt"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/GriffinGroupGlobal/backend-challenge-1/issues"
+    "url": "https://github.com/murakami-marco/backend-challenge/issues"
   },
-  "homepage": "https://github.com/GriffinGroupGlobal/backend-challenge-1#readme",
-  "dependencies": {},
-  "devDependencies": {}
+  "homepage": "https://github.com/murakami-marco/backend-challenge#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "fast-json-patch": "^3.1.1",
+    "joi": "^17.12.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.1.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.4.1",
+    "chai-http": "^4.4.0",
+    "mocha": "^10.2.0",
+    "nodemon": "^3.0.3",
+    "prettier": "^3.2.4"
+  }
 }
